@@ -8,10 +8,6 @@
     {
       "source": "/js/(.*)",
       "destination": "/public/js/$1"
-    },
-    {
-      "source": "/",
-      "destination": "/重庆旅游攻略.html"
     }
   ],
   "cleanUrls": true
