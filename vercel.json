@@ -1,17 +1,27 @@
 {
   "version": 2,
-  "rewrites": [
+  "builds": [
     {
-      "source": "/images/(.*)",
-      "destination": "/public/images/$1"
+      "src": "*.html",
+      "use": "@vercel/static"
     },
     {
-      "source": "/js/(.*)",
-      "destination": "/public/js/$1"
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/images/(.*)",
+      "dest": "/public/images/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/js/(.*)",
+      "dest": "/public/js/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/重庆旅游攻略.html"
     }
   ],
   "cleanUrls": true
