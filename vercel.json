@@ -8,6 +8,10 @@
     {
       "source": "/js/(.*)",
       "destination": "/public/js/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "cleanUrls": true
